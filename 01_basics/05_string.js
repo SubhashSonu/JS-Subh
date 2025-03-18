@@ -33,3 +33,24 @@ console.log(url.replace('%20', '-'))
 console.log(url.includes('kumar'))
 
 console.log(gameName.split('-'));
+
+// both line of codes are same
+// console.log("string text line 1\n" + "string text line 2");
+// "string text line 1
+// string text line 2"
+
+console.log(`string text line 1
+string text line 2`);
+    // "string text line 1
+    // string text line 2"
+    
+    const s1 = "2 + 2"; // creates a string primitive
+    const s2 = new String("2 + 2"); // creates a String object
+    console.log(eval(s1)); // returns the number 4
+    console.log(eval(s2)); // returns the string "2 + 2"
+    
+    const mood = "Happy! ";
+
+    console.log(`I feel ${mood.repeat(3)}`);
+    // Expected output: "I feel Happy! Happy! Happy! "
+    
