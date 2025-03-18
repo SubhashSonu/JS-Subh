@@ -28,9 +28,9 @@ const hundereds=10000000
 // console.log(Math.min(2,4,5,1,0)) //min value
 
 console.log(Math.random());// always gives output between 0 and 1
-console.log(Math.floor(Math.random()*10) + 1);
+console.log(Math.floor(Math.random()*10) + 1); // for generating number 1 to 10 inclusive
 
 const min=10;
 const max=20;
 
-console.log(Math.floor(Math.random()*(max-min+1))+min);
+console.log(Math.floor(Math.random()*(max-min+1))+min); //for generating number min to max inclusive
