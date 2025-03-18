@@ -32,4 +32,30 @@ const myFunction = function(){
     console.log("Hello World!");
 }
 
-console.log(typeof bigNumber)
+console.log(typeof bigNumber);
+
+
+// *****************************************************************
+
+// Stack (Primitive), Heap (Non-primitive)
+
+let mychannel="Subh";
+
+let anotherchannel=mychannel;
+
+anotherchannel="Rishabh";
+
+console.log(anotherchannel);
+console.log(mychannel);
+
+let userone={
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let usertwo=userone;
+
+usertwo.email="ram@google.com"
+
+console.log(userone.email);
+console.log(usertwo.email);
