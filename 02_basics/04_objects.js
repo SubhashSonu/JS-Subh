@@ -46,10 +46,36 @@ const users = [  // array of objects
 ]
 
 users[1].email
-console.log(tinderUser); // { id: 'abc123', name: 'John', isLoggedIn: false }
+// console.log(tinderUser); // { id: 'abc123', name: 'John', isLoggedIn: false }
 
-console.log(Object.keys(tinderUser)); // [ 'id', 'name', 'isLoggedIn' ]
-console.log(Object.values(tinderUser)); // [ 'abc123', 'John', false ]
-console.log(Object.entries(tinderUser)); // [ [ 'id', 'abc123' ], [ 'name', 'John' ], [ 'isLoggedIn', false ] ]
+// console.log(Object.keys(tinderUser)); // [ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.values(tinderUser)); // [ 'abc123', 'John', false ]
+// console.log(Object.entries(tinderUser)); // [ [ 'id', 'abc123' ], [ 'name', 'John' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')) // check if isLoggedIn is present in tinderuser or not
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')) // check if isLoggedIn is present in tinderuser or not
+
+
+const course = {
+    coursename: "JS in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// console.log(course["price"]) // output-> 999
+// course.courseInstructor 
+
+const {courseInstructor:instructor} = course  
+
+console.log(instructor); // output-> hitesh
+
+// {
+//     name: "hitesh",
+//     coursename: "JS in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
