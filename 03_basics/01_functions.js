@@ -17,7 +17,7 @@ function addTwoNumbers(number1, number2){
 // const result=addTwoNumbers(3,4); 
 // console.log("Result is:",result);
 // if we do above statement then output will be ->Result is: undefined
-// it doesnot store output value 
+// it does not store output value 
 
 function addTwoNumbers(number1, number2){
     return ( number1 + number2 );
