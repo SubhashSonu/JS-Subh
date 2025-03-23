@@ -9,10 +9,11 @@ const isLoggedIn = false
 const outsideTemp = null
 let userEmail;
 
-const id = Symbol("123")
-const anotherId= Symbol("123")
+const id = Symbol("123");
+const anotherId = Symbol("123");
 
-console.log(id===anotherId);
+console.log(id === anotherId); // false
+// Even though both symbols have the same description, they are unique.
 
 const bigNumber = 300304805030300n
 
@@ -38,6 +39,16 @@ console.log(typeof bigNumber);
 // *****************************************************************
 
 // Stack (Primitive), Heap (Non-primitive)
+/*Reference (Non-Primitive) Data Types (Stored in Heap Memory)
+Objects, Arrays, Functions
+
+These store values in heap memory.
+
+The variable holds only a reference (memory address) to the object.
+
+When assigned to a new variable, the reference is copied, not the actual value.
+*/
+
 
 let mychannel="Subh";
 
@@ -48,14 +59,14 @@ anotherchannel="Rishabh";
 console.log(anotherchannel);
 console.log(mychannel);
 
-let userone={
+let userone = {
     email: "user@google.com",
     upi: "user@ybl"
-}
+};
 
-let usertwo=userone;
+let usertwo = userone; // Reference copied
 
-usertwo.email="ram@google.com"
+usertwo.email = "ram@google.com"; // Modifies the original object
 
-console.log(userone.email);
-console.log(usertwo.email);
+console.log(userone.email); // ram@google.com
+console.log(usertwo.email); // ram@google.com
