@@ -22,16 +22,15 @@ let myTimeStamp = Date.now();
 
 // console.log(myTimeStamp);
 // console.log(myCreateDate.getTime()); 
-// console.log(Math.floor(Date.now()/1000)); in sec
+// console.log(Math.floor(Date.now()/1000)); //in sec
 
 let newDate = new Date()
 console.log(newDate);
 console.log(newDate.getMonth()+1);
 console.log(newDate.getTime());
 
-// `${newDate.getDay()} and the time is ${newDate.getTime()}`
+ console.log(`${newDate.getDay()} and the time is ${newDate.getTime()}`);
 
-newDate.toLocaleString('default',{
-    weekday: "long",
-    timeZone: ""
-})
+ console.log(newDate.toLocaleString('default', 
+    { weekday: "long", 
+    timeZone: "Asia/Kolkata" }));
