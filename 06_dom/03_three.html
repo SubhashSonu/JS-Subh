@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body style="background-color: black;color:#fff">
+    
+</body>
+<script>
+    // const div = document.createElement('div');
+    // console.log(div);
+    // div.className="main"
+    // div.id =Math.round(Math.random()*10+1);
+    // div.setAttribute("title","generated title")
+    // div.style.backgroundColor ="green"
+    // div.style.padding ="12px"
+    // // div.innerText ="Document Object Model"
+    // const addText = document.createTextNode("Document Object Model")
+    // div.appendChild(addText)
+    // document.body.appendChild(div);
+
+    const colors = ["red", "green", "blue", "pink"];
+const texts = ["Ashish", "Lisa", "Manisha", "Rishu"];
+
+function colorlabel(color, text) {
+    const div = document.createElement("div");
+    div.className = "main";
+    div.id = "rock";
+    div.style.backgroundColor = color;  // Set background color correctly
+    div.style.color = "white";  // Ensure text is visible on darker backgrounds
+    div.style.padding = "10px"; 
+    div.style.margin = "5px";
+    div.style.width = "100px";
+    div.style.textAlign = "center";
+    
+    const textNode = document.createTextNode(text); // Corrected text creation
+    div.appendChild(textNode);
+    document.body.appendChild(div);
+}
+
+// Corrected forEach iteration
+texts.forEach((text, index) => colorlabel(colors[index], text));
+
+
+</script>
+</html>
